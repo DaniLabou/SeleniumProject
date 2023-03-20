@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login Tests]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="SuperSecretPassword!"/>
+  <parameter name="user" value="tomsmith"/>
+  <test thread-count="5" name="Positiv Login(failed)">
+    <classes>
+      <class name="com.herokuapp.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="positiveLogin"/>
+          <include name="setUp"/>
+          <include name="negativeLogIn"/>
+        </methods>
+      </class> <!-- com.herokuapp.LoginTest -->
+    </classes>
+  </test> <!-- Positiv Login(failed) -->
+  <test thread-count="5" name="Check box Test(failed)">
+    <classes>
+      <class name="com.herokuapp.CheckboxTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkboxTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.CheckboxTest -->
+    </classes>
+  </test> <!-- Check box Test(failed) -->
+  <test thread-count="5" name="Drop down Test(failed)">
+    <classes>
+      <class name="com.herokuapp.DropdownTest">
+        <methods>
+          <include name="dropdownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.DropdownTest -->
+    </classes>
+  </test> <!-- Drop down Test(failed) -->
+  <test thread-count="5" name="File Upload Test(failed)">
+    <classes>
+      <class name="com.herokuapp.FileUploadTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="uploadTest"/>
+        </methods>
+      </class> <!-- com.herokuapp.FileUploadTest -->
+    </classes>
+  </test> <!-- File Upload Test(failed) -->
+</suite> <!-- Failed suite [Login Tests] -->

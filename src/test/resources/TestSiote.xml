@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Login Tests" verbose="1" >
+    <parameter name="user"  value="tomsmith"/>
+    <parameter name="password"  value="SuperSecretPassword!"/>
+
+    <test name="Positiv Login" >
+        <!--<groups>
+            <run>
+                <include name="regressions"/>
+            </run>
+        </groups>-->
+
+        <classes>
+            <class name="com.herokuapp.LoginTest" />
+        </classes>
+    </test>
+
+    <!--<test name="Negative Login">
+        <classes>
+            <class name="com.herokuapp.NegativLoginTest"/>
+        </classes>
+    </test>-->
+
+    <test name="Check box Test">
+        <classes>
+            <class name="com.herokuapp.CheckboxTest"/>
+        </classes>
+    </test>
+
+    <test name="Drop down Test">
+        <classes>
+            <class name="com.herokuapp.DropdownTest"/>
+        </classes>
+    </test>
+
+    <test name="File Upload Test">
+        <classes>
+            <class name="com.herokuapp.FileUploadTest"/>
+        </classes>
+    </test>
+
+</suite>
